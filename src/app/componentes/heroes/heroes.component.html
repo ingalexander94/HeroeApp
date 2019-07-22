@@ -1,0 +1,9 @@
+<div class="container mt-5 animated fadeIn">
+
+  <h1>Super Héroes <span>De Peliculas</span></h1>
+  <hr>
+  <div class="card-columns">
+    <app-tarjeta-heroe [heroe]="myHeroe" [indice] = "i" *ngFor="let myHeroe of heroes; let i = index"></app-tarjeta-heroe>
+  </div>
+
+</div>

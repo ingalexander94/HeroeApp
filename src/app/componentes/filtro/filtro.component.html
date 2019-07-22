@@ -1,0 +1,13 @@
+<div class="container mt-5 animated fadeIn">
+
+  <h1>Buscando: <span>{{filtro}}</span></h1>
+  <hr>
+  <div *ngIf="heroes.length===0" class="alert alert-danger" role="alert">
+    No se encontrarón Super Heroés con ese nombre <a class="alert-link" [routerLink]="[ '/heroes']">Ver Héroes</a>
+  </div>
+  <hr>
+  <div class="card-columns">
+    <app-tarjeta-heroe [heroe]="myHeroe" [indice] = "myHeroe.indice" *ngFor="let myHeroe of heroes"></app-tarjeta-heroe>
+  </div>
+
+</div>
